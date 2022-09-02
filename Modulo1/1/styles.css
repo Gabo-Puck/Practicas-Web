@@ -1,0 +1,49 @@
+div {
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    width: 70%;
+    padding: 1em 2em;
+}
+
+#form {
+    box-shadow: 4px 4px #eee;
+}
+
+label {
+    display: block;
+    padding-bottom: 1em;
+    color: white;
+}
+
+textarea {
+    display: block;
+    margin: auto;
+    border: 1px white solid;
+    border-radius: 3px;
+    display: block;
+    border-bottom: 1px;
+}
+
+input {
+    border: none;
+    width: 100%;
+    border-bottom: 1px;
+}
+
+textarea,
+input {
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+button {
+    display: block;
+    border: 1px solid grey;
+    margin: auto;
+    width: 60%;
+    border-radius: 6px;
+    padding: 1em 2em;
+}
