@@ -1,18 +1,22 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
 body {
     background-color: rgb(251, 195, 105);
 }
 
 
 * {
+    color: rgba(225, 225, 225, 0.5);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Ubuntu", Arial;
 }
 
 
 .container {
     display: block;
-    width: 35%;
+    width: 25%;
     margin: auto;
     margin-top: 5em;
 }
@@ -21,21 +25,32 @@ body {
     display: block;
     margin: auto;
     margin-top: 1em;
+    padding: 1% 9%;
+    border: 0 solid black;
+    background-color: rgb(241, 118, 125);
+    color: white;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 5px;
 }
 
 .card {
+    padding: 1em 1em;
     border-radius: 1em;
-    background-color: rgb(83, 156, 182);
+    background-color: rgb(78, 164, 195);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(50px, auto);
+    grid-gap: 1px;
+    grid-template-rows: auto auto auto;
 
 }
 
 .card-title {
+    font-weight: bold;
     grid-column: 1 / 3;
     grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(225, 225, 225, 0.5);
 }
 
 .two {
@@ -43,22 +58,157 @@ body {
     grid-row: 2 / 3;
 }
 
+.two label {
+    font-size: small;
+}
+
 .three {
     grid-column: 1 / 2;
     grid-row: 3 / 3;
 }
 
+.three div {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+    margin-right: 1em;
+    width: 36%;
+}
+
+.three label {
+    display: block;
+}
+
+span {
+    display: block;
+}
+
 .four {
     grid-column: 2/2;
     grid-row: 3/3;
+
+    /* display: flex;
+    align-items: flex-end;
+    padding-left: 60%; */
+
 }
+
+.master-card {
+
+
+    position: relative;
+
+}
+
+.marginCard {
+    position: absolute;
+    left: 56%;
+    top: 11px;
+    width: 40%;
+    height: 5em;
+    background-color: transparent;
+    border-color: aliceblue;
+    border: 1px solid rgba(225, 225, 225, 0.5);
+    border-radius: 6px;
+    /* border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%; */
+}
+
+.circle-yellow {
+    position: absolute;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    background-color: rgb(241, 161, 106);
+    left: 72%;
+    top: 55px;
+    width: 2em;
+    height: 2em;
+
+}
+
+.square {
+    position: absolute;
+    left: 58%;
+    top: 18px;
+    width: 36%;
+    height: 2em;
+    background-color: rgb(216, 213, 214);
+    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+}
+
+.squareSM {
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    width: 100%;
+    height: 1em;
+    background-color: rgb(203, 203, 203);
+    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+}
+
+.circle-red {
+    position: absolute;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    background-color: rgb(239, 120, 124);
+    left: 60%;
+    top: 55px;
+    width: 2em;
+    height: 2em;
+
+}
+
+
 
 .numbers-flexbox {
     display: flex;
     justify-content: space-evenly;
 }
 
-.numbers {
-    display: inline;
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    text-align: center;
+    opacity: 1;
+    /* Firefox */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.three div:after {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid rgba(226, 226, 226, 0.5);
+    position: absolute;
+    top: 60%;
+    right: 3px;
+    content: "";
+    z-index: 98;
+}
+
+select {
+
+    border: 0;
+    position: relative;
+    z-index: 99;
+    background: none;
+}
+
+.numbers,
+select {
+    text-align: center;
+    background-color: rgba(200, 200, 200, 0.5);
+    border: none;
     width: 20%;
+    height: 2em;
+}
+
+select {
+    width: 100%;
 }
